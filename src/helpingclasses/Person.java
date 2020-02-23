@@ -21,9 +21,9 @@ public class Person {
     public void setLastName(String lastName){
         this.lastName = lastName;
     }
-
-
-
+    public ArrayList<String> getContactNumber(){
+        return contactNumber;
+    }
 
 
 
