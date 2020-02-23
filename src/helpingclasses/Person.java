@@ -24,6 +24,11 @@ public class Person {
     public ArrayList<String> getContactNumber(){
         return contactNumber;
     }
+    public void setContactNumber(ArrayList<String> contactNumber){
+        this.contactNumber = contactNumber;
+    }
+
+
 
 
 
