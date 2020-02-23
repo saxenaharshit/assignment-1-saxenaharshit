@@ -33,22 +33,11 @@ public class Person {
     public void setEmail(String email){
         this.email = email;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public String toString(){
+        return "First Name:" + firstName + "\n" +
+                "Last Name:" + lastName + "\n" +
+                "Contact Number:" + contactNumber + "\n" +
+                "Email=" + email;
+    }
 }
