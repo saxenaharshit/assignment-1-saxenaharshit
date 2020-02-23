@@ -9,6 +9,12 @@ public class Person {
     private ArrayList<String> contactNumber;
     private String email;
 
+    public String getFirstName(){
+        return firstName;
+    }
+
+
+
 
 
 
