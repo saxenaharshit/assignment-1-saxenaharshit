@@ -18,6 +18,11 @@ public class Person {
     public String getLastName(){
         return lastName;
     }
+    public void setLastName(String lastName){
+        this.lastName = lastName;
+    }
+
+
 
 
 
