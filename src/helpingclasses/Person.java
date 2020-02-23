@@ -27,6 +27,11 @@ public class Person {
     public void setContactNumber(ArrayList<String> contactNumber){
         this.contactNumber = contactNumber;
     }
+    public String getEmail(){
+        return email;
+    }
+
+
 
 
 
