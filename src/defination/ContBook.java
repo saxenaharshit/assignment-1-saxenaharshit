@@ -9,6 +9,12 @@ public class ContBook implements ADT<Person> {
 
     Scanner sc = new Scanner( System.in );
 
+    Node<Person> head;
+
+    public ContBook(){
+        head = null;
+    }
+
     @Override
     public void add(Person data) {
 
