@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class ContBook implements ADT<Person> {
 
+    Scanner sc = new Scanner( System.in );
+
     @Override
     public void add(Person data) {
 
