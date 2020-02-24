@@ -6,5 +6,8 @@ import java.util.Scanner;
 
 public class ContManage {
     Person person = new Person();
+    Scanner sc = new Scanner( System.in );
+
+
 
 }
