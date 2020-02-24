@@ -15,6 +15,12 @@ public class ContBook implements ADT<Person> {
         head = null;
     }
 
+
+    public Node getHead(){
+        return head;
+    }
+
+
     @Override
     public void add(Person data) {
 
