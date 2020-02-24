@@ -20,10 +20,20 @@ public class ContBook implements ADT<Person> {
         return head;
     }
 
-
     @Override
-    public void add(Person data) {
+    public void add(Person data){
+        Node node = new Node( data );
 
+        if(head == null) {
+            head = node;
+        }
+        else{
+            Node temp = head;
+            while(temp.getNext() != null) {
+                temp = temp.getNext();
+            }
+            temp.setNext( node );
+        }
     }
 
     @Override
@@ -40,4 +50,6 @@ public class ContBook implements ADT<Person> {
     public void print() {
 
     }
+
+
 }
