@@ -105,6 +105,33 @@ public class ContBook implements ADT<Person> {
 
     }
 
+    public void sortList(){
+        //Node current will point to head
+        Node<Person> current = head, index = null;
+        Person temp;
+
+        if(head == null) {
+            return;
+        }
+        else{
+            while(current != null) {
+                //Node index will point to node next to current
+                index = current.getNext();
+                while(index != null) {
+                    //If current node's data is greater than index's node data, swap the data between them
+                    if(current.getData().getFirstName().compareTo( index.getData().getFirstName() ) > 0) {
+                        temp = current.getData();
+                        current.setData( index.getData() );
+                        index.setData( temp );
+                    }
+                    index = index.getNext();
+                }
+                current = current.getNext();
+            }
+        }
+    }
+
+
 
     public int printName(){
         System.out.println( "---Here are all your contacts---" );
